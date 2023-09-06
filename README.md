@@ -10,3 +10,6 @@
 <h3>Tecnolgias </h3>
 <img src="https://github.com/ZduardoPereira/portfolio_digital_dsm/assets/127692036/e50c42ea-cb7e-4571-afc2-a9cc3d4f7dad" width="100px"/>
 <img src="https://github.com/ZduardoPereira/portfolio_digital_dsm/assets/127692036/946fd8a0-01c0-483a-9e48-40ce3b10c2cc" width="100px"/>
+
+<h3>Como clonar</h3>
+<p>Abra o terminal em uma pasta onde você deseja colocar o repositório e digite''git clone https://github.com/ZduardoPereira/portfolio_digital_dsm.git''</p>
