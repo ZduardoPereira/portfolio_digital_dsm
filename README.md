@@ -13,3 +13,5 @@
 
 <h3>Como clonar</h3>
 <p>Abra o terminal em uma pasta onde você deseja colocar o repositório e digite''git clone https://github.com/ZduardoPereira/portfolio_digital_dsm.git''</p>
+
+(Validação professor FGMC - 1DSM - 2023-02)
