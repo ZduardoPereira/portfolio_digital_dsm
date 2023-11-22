@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
+{% block conteudo %}
+<div class="container_perfil">
+  <img class="imagem_perfil" src="{{ url_for('static', filename='imagens/foto_perfil.jpg') }}" alt="" width="350"
+    height="350">
+</div>
+<div class="body">
+
+  <h1>Sobre mim</h1>
+  <p>
+    Olá, meu nome é José Eduardo, tenho 19 anos, e sou um apaixonado por vôlei e esportes em geral.
+    Além disso, sempre tive um fascínio por tecnologia, embora tenha decidido seguir essa área somente no terceiro
+    ano do ensino médio. Atualmente, estou fazendo um curso de inglês, e também sou um aluno do primeiro semestre de
+    DSM. Este é o meu portfólio, no qual apresento as tecnologias que pretendo utilizar em minha jornada.</p>
+    <h2>Tenologias</h2>
+    <div class="card20">
+      
+      <div class="card" style="width: 18rem; margin: 10px;">
+        <img src="{{ url_for('static', filename='imagens/css.png') }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text text-lg">CSS é uma linguagem de estilo que complementa o HTML, permitindo a estilização e o
+            design das
+            páginas web. Com o CSS, você pode controlar a aparência dos elementos HTML, como cores, fontes, espaçamento,
+            layout e muito mais. A cascata no nome refere-se à hierarquia de regras que determinam como os estilos são
+            aplicados, dando flexibilidade e controle refinado sobre o layout e o visual de uma página</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin: 10px;">
+          <img src="{{ url_for('static', filename='imagens/html.png') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">HTML é a linguagem fundamental para criar páginas web. Utilizado para estruturar o conteúdo
+        de uma página, HTML usa marcadores (tags) para definir elementos como cabeçalhos, parágrafos, imagens, links, e
+        outros. A estrutura básica de uma página HTML inclui elementos como 'html','head', 'title', e 'body'. HTML
+        fornece a base estrutural que é estilizada e interativamente manipulada usando CSS e JavaScript.
+        
+      </p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin: 10px;">
+    <img src="{{ url_for('static', filename='imagens/flask.png') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Flask é um framework web em Python que facilita a criação de aplicativos web. Ele é leve,
+        flexível e segue o princípio "faça o mínimo possível". Flask não impõe estruturas rígidas, permitindo aos
+        desenvolvedores escolherem suas ferramentas e bibliotecas preferidas. Com suporte embutido para templates Jinja2
+        e integração com o sistema de roteamento, Flask é uma escolha popular para criar aplicativos web simples a
+        médios. Sua natureza modular e extensível facilita a expansão de funcionalidades conforme necessário.</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; margin: 10px;">
+      <img src="{{ url_for('static', filename='imagens/python_18894.png') }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Python é uma linguagem de programação de alto nível, projetada para ser fácil de ler e
+          escrever. É conhecida por sua sintaxe clara e concisa, tornando-a adequada para iniciantes e programadores
+          experientes. Python é uma linguagem versátil, utilizada em uma variedade de domínios, incluindo desenvolvimento
+          web, automação, ciência de dados, inteligência artificial e muito mais. Sua comunidade ativa, vasta biblioteca
+          padrão e frameworks como Flask e Django a tornam uma escolha popular para o desenvolvimento web.</p>
+        </div>
+      </div>
+    </div>
+    <h2>Rede Sociais</h2>
+    <a href="https://www.instagram.com/jose__eduardo12/">
+      <img src="{{ url_for('static', filename='imagens/instagram.png') }}" alt="" width="150" height="150">
+    </a>
+    
+  </div>
+    {% endblock %}

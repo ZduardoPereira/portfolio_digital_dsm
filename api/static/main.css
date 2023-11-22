@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.imagem_perfil{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tamanho_img{
+    width:"400px";
+    height:"400px";   
+}
+
+.container_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card20 {
+    display: flex;
+    margin: 10px;
+    flex-flow: row;
+    
+}
+
+.card21 {
+    display: flex;
+    flex-flow: row;
+    
+}
+
+@media (max-width: 800px){
+    .card20 {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      align-items: center;
+      
+  }
+  .card21 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px ;
+}
+    
+  }
+
+.body{
+    margin-left: 10px;
+}
+
+.img_profissional{
+    margin-left: 10px;
+    margin-right: 10px;
+}

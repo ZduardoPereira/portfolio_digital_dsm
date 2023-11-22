@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+<link rel="stylesheet" href="main.css">
+{% block conteudo %}
+<div class="body">   
+    <h1>Profissional</h1>
+    <h2>Contato</h2>
+    <div class="img_profissional">
+
+        <a href="https://github.com/ZduardoPereira">
+            <img style="background-color: white;" src="{{ url_for('static', filename='imagens/github.png') }}" alt=""
+            width="150" height="150">
+        </a>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/">
+            <img src="{{ url_for('static', filename='imagens/linkedin.png') }}" alt="" width="150" height="150">
+        </a>
+    </div>
+    
+    <h2>Objetivos</h2>
+    <p>
+        Olá,
+        
+        Me chamo José Eduardo e estou em busca de uma oportunidade de estágio na área de programação enquanto curso minha
+        formação. Atualmente, estou em processo de aprendizado em linguagens como Python, Java e C++, e estou entusiasmado
+        para aplicar os conhecimentos que venho adquirindo em um ambiente prático.
+        
+        Meu objetivo é consolidar minha experiência e me estabelecer como profissional na área de programação. Acredito que
+        um estágio proporcionará o ambiente ideal para aprimorar minhas habilidades e contribuir de forma significativa para
+        projetos desafiadores. Estou empenhado em manter-me atualizado com as últimas tendências e tecnologias, participando
+        ativamente de cursos online, hackathons e desenvolvendo projetos pessoais.
+        
+        Busco uma oportunidade em uma empresa que valorize a inovação e ofereça um ambiente colaborativo, onde eu possa
+        aplicar e expandir meus conhecimentos. Agradeço pela consideração e estou à disposição para discutir como posso
+        contribuir para o sucesso da sua equipe.</p>
+        
+        <h2>Expêriencias</h2>
+        <p>Garçom - Restaurante O Mineiro Uai (3 anos)
+            Atuei como garçom no Restaurante O Mineiro Uai durante um período de 3 anos, adquirindo habilidades valiosas em
+            atendimento ao cliente, organização de mesas e pedidos, e trabalho em equipe.
+            Demonstrei profissionalismo e cordialidade ao lidar com os clientes, garantindo uma experiência gastronômica
+            memorável.
+            Trabalho Freelance
+            Participei de trabalhos freelance em diversas áreas, adquirindo experiência em diferentes tipos de projetos e
+            colaborando com uma variedade de clientes.
+            Essa experiência me permitiu desenvolver habilidades de autogestão, adaptabilidade e comunicação, além de me
+            expor a diversos desafios profissionais.</p>
+            
+            <h2>Trajetória Acadêmica</h2>
+<p>Meu caminho acadêmico tem sido uma jornada empolgante, repleta de aprendizado e descobertas. Tudo começou no
+    Ensino Médio, quando tive a oportunidade de estudar na renomada escola Colégio Embraer, onde adquiri uma base
+    sólida de conhecimento e habilidades que têm sido fundamentais em minha trajetória.
+
+    Atualmente, estou cursando DSM (Desenvolvimento de Sistemas para Internet) na faculdade da FATEC, uma
+    instituição reconhecida por sua excelência no ensino técnico e tecnológico. Essa escolha de carreira veio após
+    uma profunda reflexão e meu interesse de longa data pela tecnologia.
+    
+    Paralelamente, estou aprimorando minhas habilidades linguísticas através do curso de inglês no Callan, que tem
+    sido uma experiência incrível para melhorar minha proficiência no idioma e me conectar com um mundo de
+    oportunidades globais.
+    
+    Além disso, não posso deixar de mencionar o curso de Cloud do Azure que concluí no SENAI. Esse curso enriqueceu
+    minha compreensão das tecnologias em nuvem e suas aplicações, abrindo portas para futuras oportunidades
+    profissionais em um campo em constante crescimento.
+    
+    Em resumo, meu caminho acadêmico tem sido uma combinação de educação de alta qualidade e dedicação pessoal.
+    Estou ansioso para continuar crescendo, adquirindo novos conhecimentos e aproveitando as oportunidades que essas
+    experiências educacionais e de formação me oferecem.
+</p>
+
+</div>
+
+{% endblock %}
