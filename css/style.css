@@ -702,3 +702,27 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+    .skills-container {
+      display: flex; /* Coloca os itens lado a lado */
+      gap: 20px; /* Espaço entre as colunas */
+      justify-content: space-between; /* Distribui o espaço entre os itens */
+    }
+    
+    .skills-section {
+      flex: 1; /* Ajusta o tamanho das colunas para serem proporcionais */
+      padding: 10px;
+      border: 1px solid #ddd; /* Apenas para visualização */
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    
+    .skills-section h2 {
+      margin-bottom: 10px;
+    }
+    
+    .skills-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    
