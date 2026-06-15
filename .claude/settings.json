@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\jose\\\\Desktop\\\\Projetos GitHub\\\\portfolio_digital_dsm\\\\assets\" -Recurse -File | ForEach-Object { $_.FullName })"
+    ]
+  }
+}

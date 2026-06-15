@@ -5,15 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Portal de Transparência — FAPG | José Eduardo</title>
-  <meta name="description" content="Portal da transparência da Fundação FAPG" />
+  <title>Monitoramento Ambiental — Tecsus | José Eduardo</title>
+  <meta name="description" content="Sistema de monitoramento ambiental para a Tecsus com coleta e visualização de dados meteorológicos em tempo real" />
 
   <link rel="stylesheet" href="css/style.css" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -27,23 +25,14 @@
       </div>
       <div class="header__main">
         <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="./index.html" class="header__link">Home</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#about" class="header__link">Sobre</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#projects" class="header__link">Projetos</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#contact" class="header__link">Contato</a>
-          </li>
+          <li class="header__link-wrapper"><a href="./index.html"   class="header__link">Home</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#about"    class="header__link">Sobre</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projetos</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#contact"  class="header__link">Contato</a></li>
         </ul>
         <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
+          <img src="./assets/svg/ham-menu.svg"       alt="menu"        class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="fechar menu" class="header__main-ham-menu-close d-none" />
         </div>
       </div>
     </div>
@@ -61,16 +50,16 @@
 
   <section class="project-cs-hero">
     <div class="project-cs-hero__content">
-      <h1 class="heading-primary">Portal de Transparência — FAPG</h1>
+      <h1 class="heading-primary">Monitoramento Ambiental — Tecsus</h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          Portal da transparência para a Fundação de Apoio à Pesquisa de Pós-Graduandos (FAPG), com
-          gerenciamento completo dos projetos e dados públicos da fundação.
+          Sistema de monitoramento ambiental para a Tecsus, com coleta, processamento e visualização
+          de dados meteorológicos em tempo real. — 4° Semestre
         </p>
       </div>
       <div class="project-cs-hero__cta">
-        <a href="https://github.com/A-Sync-Fatec/api-fatec-3sem-24" class="btn btn--bg" target="_blank"
-          rel="noreferrer">GitHub</a>
+        <a href="https://github.com/Sync-FATEC/API-2025.1-4SEM" class="btn btn--bg btn--theme"
+           target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
   </section>
@@ -79,32 +68,38 @@
     <div class="main-container">
       <div class="project-details__content">
         <div class="project-details__showcase-img-cont">
-          <img src="./assets/jpeg/FAPG.jpeg" alt="Portal de Transparência FAPG" class="project-details__showcase-img" />
+          <img src="./assets/jpeg/tecsus.png" alt="Sistema de Monitoramento Ambiental — Tecsus"
+               class="project-details__showcase-img" />
         </div>
         <div class="project-details__content-main">
 
           <div class="project-details__desc">
             <h3 class="project-details__content-title">Sobre o Projeto</h3>
             <p class="project-details__desc-para">
-              O projeto consiste no desenvolvimento de um portal da transparência para a Fundação FAPG. O objetivo foi
-              entregar uma plataforma eficiente, com funcionalidades que permitem o gerenciamento completo dos projetos,
-              garantindo acesso público às informações da fundação de forma organizada e segura.
+              O projeto consiste no desenvolvimento de um sistema de monitoramento ambiental para a empresa Tecsus,
+              permitindo a coleta, processamento e visualização de dados meteorológicos em tempo real. O sistema
+              integra estações de medição físicas com uma plataforma web para exibição de dashboards e alertas
+              ambientais.
+            </p>
+            <p class="project-details__desc-para">
+              A solução envolve hardware de sensoriamento conectado a uma interface web desenvolvida com React e
+              TypeScript, armazenando os dados em MongoDB e MySQL para consulta histórica e análise em tempo real.
             </p>
 
             <h3 class="project-details__content-title">Minhas Contribuições</h3>
             <p class="project-details__desc-para">
-              Atuei principalmente no desenvolvimento backend, sendo responsável pela construção das APIs REST com
-              Java e Spring Boot, modelagem e gerenciamento do banco de dados MySQL, e implementação de regras de
-              negócio e autenticação. Contribuí também com partes do frontend em React e TypeScript.
+              Fui responsável por toda a parte de hardware de medição — desenvolvimento, montagem e configuração
+              das estações físicas de coleta de dados meteorológicos, incluindo a integração dos sensores e a
+              transmissão dos dados para o sistema.
             </p>
 
             <div class="skills-container">
               <div class="skills-section">
                 <h2>Hard Skills</h2>
                 <ul>
-                  <li>Java · Spring Boot</li>
+                  <li>Hardware · Sensores</li>
                   <li>React · TypeScript</li>
-                  <li>Python · MySQL</li>
+                  <li>MongoDB · MySQL</li>
                   <li>HTML · CSS</li>
                   <li>Figma</li>
                 </ul>
@@ -113,8 +108,8 @@
                 <h2>Soft Skills</h2>
                 <ul>
                   <li>Trabalho em Equipe</li>
-                  <li>Comunicação Eficaz</li>
                   <li>Resolução de Problemas</li>
+                  <li>Comunicação Técnica</li>
                   <li>Gestão de Tempo</li>
                 </ul>
               </div>
@@ -129,17 +124,18 @@
               <div class="skills__skill">CSS</div>
               <div class="skills__skill">React</div>
               <div class="skills__skill">TypeScript</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">Spring Boot</div>
-              <div class="skills__skill">Python</div>
+              <div class="skills__skill">MongoDB</div>
               <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">Hardware</div>
             </div>
           </div>
 
           <div class="project-details__links">
-            <a href="https://github.com/A-Sync-Fatec/api-fatec-3sem-24"
-              class="btn btn--med btn--theme project-details__links-btn" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://github.com/Sync-FATEC/API-2025.1-4SEM"
+               class="btn btn--med btn--theme project-details__links-btn"
+               target="_blank" rel="noreferrer">GitHub</a>
           </div>
+
         </div>
       </div>
     </div>
@@ -149,25 +145,21 @@
     <div class="main-container">
       <div class="main-footer__upper">
         <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Social</span>
-          </h2>
+          <h2 class="heading-sm main-footer__heading-sm">Social</h2>
           <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer"
-              href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/">
               <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
             </a>
             <a target="_blank" rel="noreferrer" href="https://github.com/ZduardoPereira">
               <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" />
             </a>
             <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jose__eduardo12/">
-              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png"
-                alt="Instagram" />
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="Instagram" />
             </a>
           </div>
         </div>
         <div class="main-footer__row main-footer__row-2">
-          <h4 class="heading heading-sm text-lt">José Eduardo</h4>
+          <h4 class="heading-sm" style="color:#fff;">José Eduardo</h4>
           <p class="main-footer__short-desc">Desenvolvedor de Software · DSM FATEC SJC</p>
         </div>
       </div>

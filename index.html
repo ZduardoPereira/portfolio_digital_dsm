@@ -1,247 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Portfólio</title>
-  <meta name="description" content="Portfolio Template for Developer" />
+  <title>José Eduardo | Portfólio</title>
+  <meta name="description" content="Portfólio de José Eduardo — Desenvolvedor de Software, DSM FATEC SJC" />
 
   <link rel="stylesheet" href="css/style.css" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+
+  <!-- ── Header ───────────────────────────────────────── -->
   <header class="header">
     <div class="header__content">
       <div class="header__logo-container">
         <div class="header__logo-img-cont">
-          <img src="./assets/jpeg/foto_perfil.jpg" alt="Ram Maheshwari Logo Image" class="header__logo-img" />
+          <img src="./assets/jpeg/foto_perfil.jpg" alt="José Eduardo" class="header__logo-img" />
         </div>
         <span class="header__logo-sub">José Eduardo</span>
       </div>
       <div class="header__main">
         <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="./index.html" class="header__link"> Home </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#about" class="header__link">Sobre</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#projects" class="header__link">
-              Projetos
-            </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="./index.html#contact" class="header__link"> Contato </a>
-          </li>
+          <li class="header__link-wrapper"><a href="./index.html"    class="header__link">Home</a></li>
+          <li class="header__link-wrapper"><a href="#about"          class="header__link">Sobre</a></li>
+          <li class="header__link-wrapper"><a href="#projects"       class="header__link">Projetos</a></li>
+          <li class="header__link-wrapper"><a href="#contact"        class="header__link">Contato</a></li>
         </ul>
         <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
+          <img src="./assets/svg/ham-menu.svg"       alt="menu"       class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="fechar menu" class="header__main-ham-menu-close d-none" />
         </div>
       </div>
     </div>
     <div class="header__sm-menu">
       <div class="header__sm-menu-content">
         <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="./index.html"> Home </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="./index.html#about"> Sobre </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="./index.html#projects"> Projetos </a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="./index.html#contact"> Contato </a>
-          </li>
+          <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
+          <li class="header__sm-menu-link"><a href="#about">Sobre</a></li>
+          <li class="header__sm-menu-link"><a href="#projects">Projetos</a></li>
+          <li class="header__sm-menu-link"><a href="#contact">Contato</a></li>
         </ul>
       </div>
     </div>
   </header>
+
+  <!-- ── Hero ─────────────────────────────────────────── -->
   <section class="home-hero">
     <div class="home-hero__content">
-      <h1 class="heading-primary">Olá, Meu nome é José </h1>
+      <span class="home-hero__eyebrow">Desenvolvedor de Software · FATEC SJC</span>
+      <h1 class="heading-primary">José Eduardo</h1>
       <div class="home-hero__info">
         <p class="text-primary">
-          Olá, meu nome é  e sou aluno do primeiro semestre de Desenvolvimento de Sistemas Multiplataforma
-          (DSM). Este é o meu portfólio, onde apresento as tecnologias que pretendo utilizar ao longo do curso. Aqui,
-          você encontrará detalhes sobre minhas habilidades, projetos e ferramentas que estou aprendendo a dominar.
-          Fique à vontade para explorar e acompanhar minha jornada no mundo do desenvolvimento de sistemas.
+          Foco em backend, construindo soluções robustas com Python, Java e TypeScript.
+          Cursando o 6° semestre de DSM e sempre em busca de novos desafios.
         </p>
       </div>
       <div class="home-hero__cta">
-        <a href="./#projects" class="btn btn--bg">Projetos</a>
+        <a href="#projects" class="btn btn--bg btn--white">Ver Projetos</a>
+        <a href="https://github.com/ZduardoPereira" class="btn btn--bg btn--outline-white" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
+
     <div class="home-hero__socials">
       <div class="home-hero__social">
-        <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/"
-          class="home-hero__social-icon-link">
-          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="LinkedIn" class="home-hero__social-icon" />
         </a>
       </div>
       <div class="home-hero__social">
         <a href="https://github.com/ZduardoPereira" class="home-hero__social-icon-link">
-          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+          <img src="./assets/png/github-ico.png" alt="GitHub" class="home-hero__social-icon" />
         </a>
       </div>
       <div class="home-hero__social">
-        <a href="https://www.instagram.com/jose__eduardo12/"
-          class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
-          <img src="./assets/png/insta-ico.png" alt="icon" class="home-hero__social-icon" />
+        <a href="https://www.instagram.com/jose__eduardo12/" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+          <img src="./assets/png/insta-ico.png" alt="Instagram" class="home-hero__social-icon" />
         </a>
       </div>
     </div>
+
     <div class="home-hero__mouse-scroll-cont">
       <div class="mouse"></div>
     </div>
   </section>
+
+  <!-- ── About ─────────────────────────────────────────── -->
   <section id="about" class="about sec-pad">
     <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
+      <h2 class="heading heading-sec heading-sec__mb-med reveal">
         <span class="heading-sec__main">Sobre mim</span>
         <span class="heading-sec__sub">
-          Olá, meu nome é José Eduardo, tenho 19 anos, e sou um apaixonado por vôlei e esportes em geral. Além disso,
-          sempre tive um fascínio por tecnologia, embora tenha decidido seguir essa área somente no terceiro ano do
-          ensino médio. Atualmente, estou fazendo um curso de inglês, e também sou um aluno do segundo semestre de DSM.
-          Este é o meu portfólio, no qual apresento as tecnologias que pretendo utilizar em minha jornada.
+          Desenvolvedor focado em backend, apaixonado por tecnologia e por construir soluções que geram impacto real.
         </span>
       </h2>
       <div class="about__content">
-        <div class="about__content-main">
-          <h3 class="about__content-title">Leia para me conhecer!</h3>
+        <div class="about__content-main reveal">
+          <h3 class="about__content-title">Conheça minha trajetória</h3>
           <div class="about__content-details">
             <p class="about__content-details-para">
-              Olá, meu nome é José Eduardo e sou aluno do primeiro semestre de Desenvolvimento de Sistemas
-              Multiplataforma (DSM) na FATEC. Estou em busca de um estágio em programação para aplicar e expandir meus
-              conhecimentos em Python, Java e C++.
+              Sou estudante do <strong class="about__content-details-para--hl">6° semestre de DSM</strong> na FATEC SJC, com experiência em desenvolvimento
+              backend usando <strong class="about__content-details-para--hl">Python (FastAPI)</strong> e <strong class="about__content-details-para--hl">Java (Spring Boot)</strong>,
+              bancos de dados relacionais como PostgreSQL e MySQL, e desenvolvimento web com React e Next.js.
+            </p>
+            <p class="about__content-details-para">
+              Ao longo do curso participei de projetos desafiadores: plataformas de análise geoespacial com dados ASG,
+              portais de transparência pública e aplicativos de logística militar com Flutter. Atualmente faço
+              estágio na <strong class="about__content-details-para--hl">Tecsus</strong> na área de hardware.
+            </p>
+            <p class="about__content-details-para">
+              Fora da tecnologia, estou começando a explorar o mundo do <strong class="about__content-details-para--hl">desenvolvimento de jogos</strong>
+              e trabalho na construção de um <strong class="about__content-details-para--hl">volante de jogo do zero</strong> — unindo eletrônica,
+              mecânica e software em um projeto pessoal. Também sou apaixonado por vôlei e esportes em geral.
             </p>
           </div>
-          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contato</a>
+          <a href="#contact" class="btn btn--med btn--theme">Entrar em contato</a>
         </div>
-        <div class="about__content-skills">
-          <h3 class="about__content-title">Minha habilidades</h3>
+        <div class="about__content-skills reveal">
+          <h3 class="about__content-title">Habilidades</h3>
           <div class="skills">
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">TypeScript</div>
+            <div class="skills__skill">Python</div>
+            <div class="skills__skill">Java</div>
             <div class="skills__skill">JavaScript</div>
             <div class="skills__skill">React</div>
-            <div class="skills__skill">GIT</div>
-            <div class="skills__skill">Python</div>
-            <div class="skills__skill">Flask</div>
+            <div class="skills__skill">Next.js</div>
+            <div class="skills__skill">Flutter</div>
+            <div class="skills__skill">FastAPI</div>
+            <div class="skills__skill">Spring Boot</div>
+            <div class="skills__skill">PostgreSQL</div>
+            <div class="skills__skill">MySQL</div>
+            <div class="skills__skill">PostGIS</div>
+            <div class="skills__skill">Docker</div>
+            <div class="skills__skill">Git</div>
+            <div class="skills__skill">Tailwind CSS</div>
+            <div class="skills__skill">Figma</div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ── Projects ──────────────────────────────────────── -->
   <section id="projects" class="projects sec-pad">
     <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
+      <h2 class="heading heading-sec heading-sec__mb-bg reveal">
         <span class="heading-sec__main">Projetos</span>
         <span class="heading-sec__sub">
-          Aqui estão meus projetos acadêmicos e profissionais
+          Projetos desenvolvidos ao longo da minha jornada — acadêmicos, pessoais e profissionais
         </span>
       </h2>
 
-      <div class="projects__content">
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/Api-1semestre.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">API-Criança Renal</h3>
-            <p class="projects__row-content-desc">
-              Um projeto voltado para crianças com IRC (Insuficiência Renal Crônica), no qual desenvolvemos um site com
-              o objetivo de auxiliar mães e familiares.
-            </p>
-            <a href="./project-1.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Sobre</a>
-          </div>
+      <!-- ── Acadêmicos ── -->
+      <div class="projects__category">
+        <div class="projects__category-header reveal">
+          <span class="projects__category-label">
+            <span class="projects__category-dot"></span>
+            Acadêmicos
+          </span>
         </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/portfoilio.png" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+        <div class="projects__grid">
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/visiona.png" alt="VISIONA GeoQuery" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__sem">6° Semestre</span>
+              <h3 class="proj-card__title">VISIONA GeoQuery</h3>
+              <p class="proj-card__desc">
+                Plataforma web para análise de aspectos ASG de propriedades rurais de São Paulo
+                com consultas geoespaciais em linguagem natural.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">Python</span>
+                <span class="proj-tag">FastAPI</span>
+                <span class="proj-tag">Next.js</span>
+                <span class="proj-tag">PostGIS</span>
+                <span class="proj-tag">Docker</span>
+              </div>
+              <a href="./project-5.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
           </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Portfólio</h3>
-            <p class="projects__row-content-desc">
-              Projeto de design digital para a apresentação de portfólio online com informações profissionais e
-              acadêmicas.
-            </p>
-            <a href="./project-2.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Sobre</a>
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/almoxarifado.png" alt="App Almoxarifado Militar" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__sem">5° Semestre</span>
+              <h3 class="proj-card__title">App Almoxarifado Militar</h3>
+              <p class="proj-card__desc">
+                Aplicativo mobile e web para gerenciar o almoxarifado militar da Brigada Fornovo di Taro,
+                com controle de estoque e logística de materiais.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">Flutter</span>
+                <span class="proj-tag">Python</span>
+                <span class="proj-tag">Firebase</span>
+                <span class="proj-tag">PostgreSQL</span>
+                <span class="proj-tag">React</span>
+              </div>
+              <a href="./project-6.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
           </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/tecsus.png" alt="Monitoramento Ambiental Tecsus" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__sem">4° Semestre</span>
+              <h3 class="proj-card__title">Monitoramento Ambiental — Tecsus</h3>
+              <p class="proj-card__desc">
+                Sistema de monitoramento ambiental para a Tecsus com coleta, processamento e
+                visualização de dados meteorológicos em tempo real.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">TypeScript</span>
+                <span class="proj-tag">MongoDB</span>
+                <span class="proj-tag">MySQL</span>
+                <span class="proj-tag">Hardware</span>
+              </div>
+              <a href="./project-7.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/FAPG.jpeg" alt="Portal Transparência FAPG" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__sem">3° Semestre</span>
+              <h3 class="proj-card__title">Portal de Transparência — FAPG</h3>
+              <p class="proj-card__desc">
+                Portal da transparência para a Fundação FAPG com gerenciamento completo dos
+                projetos e dados públicos da fundação.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">TypeScript</span>
+                <span class="proj-tag">Java</span>
+                <span class="proj-tag">Spring</span>
+                <span class="proj-tag">MySQL</span>
+              </div>
+              <a href="./project-4.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/apidesk.png" alt="Service Desk" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__sem">2° Semestre</span>
+              <h3 class="proj-card__title">Service Desk</h3>
+              <p class="proj-card__desc">
+                Site para registro e controle de chamados de suporte com foco na experiência
+                do usuário e no planejamento do atendimento.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">JavaScript</span>
+                <span class="proj-tag">HTML</span>
+                <span class="proj-tag">CSS</span>
+              </div>
+              <a href="./project-3.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/tela_home_fitplan.jpeg" alt="FitPlan" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <h3 class="proj-card__title">FitPlan</h3>
+              <p class="proj-card__desc">
+                App mobile para geração de planos alimentares personalizados, rastreamento de peso
+                e gerenciamento de treinos com cálculo automático de macronutrientes.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">React Native</span>
+                <span class="proj-tag">TypeScript</span>
+                <span class="proj-tag">Node.js</span>
+                <span class="proj-tag">PostgreSQL</span>
+              </div>
+              <a href="./project-8.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/Api-1semestre.jpg" alt="API Criança Renal" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__sem">1° Semestre</span>
+              <h3 class="proj-card__title">API — Criança Renal</h3>
+              <p class="proj-card__desc">
+                Site de apoio a crianças com Insuficiência Renal Crônica com mapa de hospitais
+                e recursos para familiares.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">Python</span>
+                <span class="proj-tag">Flask</span>
+                <span class="proj-tag">MySQL</span>
+                <span class="proj-tag">HTML/CSS</span>
+              </div>
+              <a href="./project-1.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
+          </div>
+
+        </div><!-- /projects__grid acadêmicos -->
+      </div><!-- /projects__category acadêmicos -->
+
+      <!-- ── Pessoais ── -->
+      <div class="projects__category">
+        <div class="projects__category-header reveal">
+          <span class="projects__category-label">
+            <span class="projects__category-dot projects__category-dot--green"></span>
+            Pessoais
+          </span>
         </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/apidesk.png" alt="Software Screenshot" class="projects__row-img" loading="lazy" />
+        <div class="projects__grid">
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="https://raw.githubusercontent.com/ZduardoPereira/programa-de-monitoramento-de-ambiente-e-controle-de-acesso/main/demo/bandicam2025-04-1611-49-01-972-ezgif.com-video-to-gif-converter.gif"
+                   alt="Monitoramento de Ambiente e Controle de Acesso" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <h3 class="proj-card__title">Monitoramento Ambiental e Controle de Acesso</h3>
+              <p class="proj-card__desc">
+                Sistema embarcado com ESP32 para monitoramento de temperatura, umidade e gás em tempo real,
+                com controle de acesso via RFID e alertas automáticos.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">ESP32</span>
+                <span class="proj-tag">Arduino</span>
+                <span class="proj-tag">RFID</span>
+                <span class="proj-tag">MySQL</span>
+                <span class="proj-tag">HTML/JS</span>
+              </div>
+              <a href="./project-9.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
           </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Service Desk</h3>
-            <p class="projects__row-content-desc">
-              Site desenvolvido para oferecer registro de chamados. Seu foco é melhorar a experiência do usuário,
-              facilitando o planejamento e controle do atendimento do suporte.
-            </p>
-            <a href="./project-3.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Sobre</a>
-          </div>
+
+        </div><!-- /projects__grid pessoais -->
+      </div><!-- /projects__category pessoais -->
+
+      <!-- ── Profissionais ── -->
+      <div class="projects__category">
+        <div class="projects__category-header reveal">
+          <span class="projects__category-label">
+            <span class="projects__category-dot projects__category-dot--orange"></span>
+            Profissionais
+          </span>
         </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/png/Apg.png" alt="Portal de Transparência" class="projects__row-img" loading="lazy" />
+        <div class="projects__grid">
+
+          <div class="proj-card reveal">
+            <div class="proj-card__img-cont">
+              <img src="./assets/jpeg/tecsus.png" alt="Estágio Tecsus" class="proj-card__img" loading="lazy" />
+            </div>
+            <div class="proj-card__body">
+              <span class="proj-card__sem">Estágio · 2025 — atual</span>
+              <h3 class="proj-card__title">Tecsus — Hardware</h3>
+              <p class="proj-card__desc">
+                Estágio na área de hardware na Tecsus, empresa especializada em soluções de
+                telemetria e monitoramento de dados para concessionárias de energia e saneamento.
+              </p>
+              <div class="proj-card__tags">
+                <span class="proj-tag">Hardware</span>
+                <span class="proj-tag">Eletrônica</span>
+                <span class="proj-tag">IoT</span>
+              </div>
+              <a href="./project-10.html" class="btn btn--med btn--theme">Ver Mais</a>
+            </div>
           </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Portal de Transparência - FAPG</h3>
-            <p class="projects__row-content-desc">
-              Releitura do portal de transparência da Fundação de Apoio à Pesquisa de Pós-Graduandos (FAPG). Desenvolvido
-              com foco na segurança, acessibilidade e utilização de tecnologias recentes, garantindo um acesso eficiente
-              e transparente às informações públicas.
-            </p>
-            <a href="./project-4.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Sobre</a>
-          </div>
-        </div>
+
+        </div><!-- /projects__grid profissionais -->
+      </div><!-- /projects__category profissionais -->
+
+    </div>
+  </section>
+
+  <!-- ── Contact ───────────────────────────────────────── -->
+  <section id="contact" class="contact sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med reveal">
+        <span class="heading-sec__main heading-sec__main--lt">Contato</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Vamos conversar? Me encontre nas redes sociais ou envie uma mensagem pelo LinkedIn.
+        </span>
+      </h2>
+      <div class="contact__cta reveal">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/"
+           class="btn btn--bg btn--theme" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/ZduardoPereira"
+           class="btn btn--bg btn--outline-white" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
   </section>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
   <footer class="main-footer">
     <div class="main-container">
       <div class="main-footer__upper">
         <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Social</span>
-          </h2>
+          <h2 class="heading-sm main-footer__heading-sm">Social</h2>
           <div class="main-footer__social-cont">
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/">
-              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
             </a>
             <a target="_blank" rel="noreferrer" href="https://github.com/ZduardoPereira">
-              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" />
             </a>
             <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jose__eduardo12/">
-              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="icon" />
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="Instagram" />
             </a>
           </div>
         </div>
         <div class="main-footer__row main-footer__row-2">
-          <h4 class="heading heading-sm text-lt">José Eduardo</h4>
-          <p class="main-footer__short-desc">
-  
-          </p>
+          <h4 class="heading-sm" style="color:#fff;">José Eduardo</h4>
+          <p class="main-footer__short-desc">Desenvolvedor de Software · DSM FATEC SJC</p>
         </div>
+      </div>
+      <div class="main-footer__lower">
+        © 2026 José Eduardo. Todos os direitos reservados.
       </div>
     </div>
   </footer>
-  
+
+  <script src="./index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Monitoramento de Ambiente e Controle de Acesso | José Eduardo</title>
+  <meta name="description" content="Sistema embarcado com ESP32 para monitoramento ambiental e controle de acesso via RFID" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    .demo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 0 0 6rem;
+    }
+    @media only screen and (max-width: 56.25em) {
+      .demo-grid { grid-template-columns: 1fr; }
+    }
+    .demo-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .demo-item img {
+      width: 100%;
+      display: block;
+    }
+    .demo-item__label {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--clr-muted);
+      text-align: center;
+      padding: 1.2rem;
+      background: var(--clr-surface);
+      border-top: 1px solid var(--clr-border);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .hardware-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin: 2rem 0 4rem;
+    }
+    @media only screen and (max-width: 37.5em) {
+      .hardware-list { grid-template-columns: 1fr; }
+    }
+    .hardware-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      padding: 1.8rem;
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+    }
+    .hardware-item__icon {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background: var(--clr-accent);
+      flex-shrink: 0;
+      margin-top: 0.6rem;
+    }
+    .hardware-item__name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--clr-text);
+      margin-bottom: 0.3rem;
+    }
+    .hardware-item__desc {
+      font-size: 1.4rem;
+      color: var(--clr-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/jpeg/foto_perfil.jpg" alt="José Eduardo" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">José Eduardo</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper"><a href="./index.html"          class="header__link">Home</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#about"    class="header__link">Sobre</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projetos</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#contact"  class="header__link">Contato</a></li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg"       alt="menu"        class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="fechar menu" class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#about">Sobre</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#projects">Projetos</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">Monitoramento Ambiental e Controle de Acesso</h1>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          Sistema embarcado com ESP32 para monitoramento de temperatura, umidade e gás em tempo real,
+          integrado a controle de acesso via RFID com dashboard web e alertas automáticos.
+        </p>
+      </div>
+      <div class="project-cs-hero__cta">
+        <a href="https://github.com/ZduardoPereira/programa-de-monitoramento-de-ambiente-e-controle-de-acesso"
+           class="btn btn--bg btn--theme" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+
+        <!-- Demo GIFs -->
+        <div class="demo-grid">
+          <div class="demo-item">
+            <img src="https://raw.githubusercontent.com/ZduardoPereira/programa-de-monitoramento-de-ambiente-e-controle-de-acesso/main/demo/bandicam2025-04-1611-49-01-972-ezgif.com-video-to-gif-converter.gif"
+                 alt="Dashboard de monitoramento ambiental" />
+            <div class="demo-item__label">Monitoramento em tempo real</div>
+          </div>
+          <div class="demo-item">
+            <img src="https://raw.githubusercontent.com/ZduardoPereira/programa-de-monitoramento-de-ambiente-e-controle-de-acesso/main/demo/bandicam2025-04-1611-49-50-502-ezgif.com-video-to-gif-converter.gif"
+                 alt="Controle de acesso RFID" />
+            <div class="demo-item__label">Controle de acesso RFID</div>
+          </div>
+        </div>
+
+        <div class="project-details__content-main">
+
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Sobre o Projeto</h3>
+            <p class="project-details__desc-para">
+              Solução integrada que combina monitoramento ambiental em tempo real com controle de acesso.
+              O sistema utiliza um microcontrolador ESP32 para coletar dados de sensores de temperatura,
+              umidade (DHT11) e gás (MQ-9), enviando-os via WebSocket para um dashboard web interativo
+              com gráficos em tempo real.
+            </p>
+            <p class="project-details__desc-para">
+              O módulo de controle de acesso usa um leitor RFID RC522 para identificar tags/cartões,
+              registrando entradas e saídas no banco de dados MySQL. O sistema emite alertas automáticos
+              via e-mail/SMS quando os limites ambientais são ultrapassados e suporta webhooks para
+              integração com sistemas externos.
+            </p>
+
+            <h3 class="project-details__content-title">Minhas Contribuições</h3>
+            <p class="project-details__desc-para">
+              Desenvolvi o projeto inteiro — desde a programação do firmware do ESP32 em C++ (Arduino),
+              montagem e configuração dos sensores e módulo RFID, até o servidor web com ESPAsyncWebServer,
+              a comunicação via WebSocket e o dashboard HTML/CSS/JS com Chart.js para visualização dos dados.
+            </p>
+
+            <h3 class="project-details__content-title">Hardware Utilizado</h3>
+            <div class="hardware-list">
+              <div class="hardware-item">
+                <div class="hardware-item__icon"></div>
+                <div>
+                  <div class="hardware-item__name">ESP32</div>
+                  <div class="hardware-item__desc">Microcontrolador principal com Wi-Fi integrado</div>
+                </div>
+              </div>
+              <div class="hardware-item">
+                <div class="hardware-item__icon"></div>
+                <div>
+                  <div class="hardware-item__name">DHT11</div>
+                  <div class="hardware-item__desc">Sensor de temperatura e umidade</div>
+                </div>
+              </div>
+              <div class="hardware-item">
+                <div class="hardware-item__icon"></div>
+                <div>
+                  <div class="hardware-item__name">MQ-9</div>
+                  <div class="hardware-item__desc">Sensor de detecção de gases</div>
+                </div>
+              </div>
+              <div class="hardware-item">
+                <div class="hardware-item__icon"></div>
+                <div>
+                  <div class="hardware-item__name">RFID RC522</div>
+                  <div class="hardware-item__desc">Leitor de cartões e tags para controle de acesso</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-container">
+              <div class="skills-section">
+                <h2>Hard Skills</h2>
+                <ul>
+                  <li>C++ · Arduino (ESP32)</li>
+                  <li>WebSocket · API REST</li>
+                  <li>HTML · CSS · Chart.js</li>
+                  <li>MySQL</li>
+                  <li>Eletrônica · Sensores</li>
+                </ul>
+              </div>
+              <div class="skills-section">
+                <h2>Soft Skills</h2>
+                <ul>
+                  <li>Autonomia</li>
+                  <li>Resolução de Problemas</li>
+                  <li>Raciocínio Lógico</li>
+                  <li>Criatividade Técnica</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Tecnologias Utilizadas</h3>
+            <div class="skills">
+              <div class="skills__skill">ESP32</div>
+              <div class="skills__skill">C++ / Arduino</div>
+              <div class="skills__skill">WebSocket</div>
+              <div class="skills__skill">ESPAsyncWebServer</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">HTML5</div>
+              <div class="skills__skill">Chart.js</div>
+              <div class="skills__skill">RFID RC522</div>
+              <div class="skills__skill">DHT11</div>
+              <div class="skills__skill">MQ-9</div>
+            </div>
+          </div>
+
+          <div class="project-details__links">
+            <a href="https://github.com/ZduardoPereira/programa-de-monitoramento-de-ambiente-e-controle-de-acesso"
+               class="btn btn--med btn--theme project-details__links-btn"
+               target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading-sm main-footer__heading-sm">Social</h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/ZduardoPereira">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jose__eduardo12/">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading-sm" style="color:#fff;">José Eduardo</h4>
+          <p class="main-footer__short-desc">Desenvolvedor de Software · DSM FATEC SJC</p>
+        </div>
+      </div>
+      <div class="main-footer__lower">
+        © 2026 José Eduardo. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

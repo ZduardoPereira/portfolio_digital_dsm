@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FitPlan | José Eduardo</title>
+  <meta name="description" content="App mobile para geração de planos alimentares personalizados, rastreamento de peso e gerenciamento de treinos" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    .fitplan-screens {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.6rem;
+      margin: 4rem 0;
+    }
+    @media only screen and (max-width: 56.25em) {
+      .fitplan-screens { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media only screen and (max-width: 37.5em) {
+      .fitplan-screens { grid-template-columns: repeat(2, 1fr); }
+    }
+    .fitplan-screen {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .fitplan-screen img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .fitplan-screen__label {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--clr-muted);
+      text-align: center;
+      padding: 1rem;
+      background: var(--clr-surface);
+      border-top: 1px solid var(--clr-border);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/jpeg/foto_perfil.jpg" alt="José Eduardo" class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">José Eduardo</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper"><a href="./index.html"          class="header__link">Home</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#about"    class="header__link">Sobre</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link">Projetos</a></li>
+          <li class="header__link-wrapper"><a href="./index.html#contact"  class="header__link">Contato</a></li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg"       alt="menu"        class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="fechar menu" class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link"><a href="./index.html">Home</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#about">Sobre</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#projects">Projetos</a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">FitPlan</h1>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          Aplicativo mobile completo para geração de planos alimentares personalizados, rastreamento
+          de peso e gerenciamento de treinos — desenvolvido do zero, do backend ao app.
+        </p>
+      </div>
+      <div class="project-cs-hero__cta">
+        <a href="https://github.com/ZduardoPereira/App-Receita" class="btn btn--bg btn--theme"
+           target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+
+        <!-- Galeria de telas -->
+        <div class="fitplan-screens">
+          <div class="fitplan-screen">
+            <img src="./assets/jpeg/tela_de_login_fitplan.jpeg" alt="Tela de Login" />
+            <div class="fitplan-screen__label">Login</div>
+          </div>
+          <div class="fitplan-screen">
+            <img src="./assets/jpeg/tela_home_fitplan.jpeg" alt="Home" />
+            <div class="fitplan-screen__label">Home</div>
+          </div>
+          <div class="fitplan-screen">
+            <img src="./assets/jpeg/tela_de_dieta_fitplan.jpeg" alt="Plano Alimentar" />
+            <div class="fitplan-screen__label">Dieta</div>
+          </div>
+          <div class="fitplan-screen">
+            <img src="./assets/jpeg/tela_de_treino_fitplan.jpeg" alt="Treinos" />
+            <div class="fitplan-screen__label">Treino</div>
+          </div>
+        </div>
+
+        <div class="project-details__content-main">
+
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Sobre o Projeto</h3>
+            <p class="project-details__desc-para">
+              O FitPlan é um aplicativo mobile completo desenvolvido com React Native (Expo) e Node.js.
+              O app calcula automaticamente as necessidades calóricas e de macronutrientes do usuário com
+              base na fórmula de <strong>Mifflin-St Jeor</strong>, gerando um plano alimentar com sugestão
+              de refeições personalizadas (café, almoço e jantar) usando alimentos do dia a dia.
+            </p>
+            <p class="project-details__desc-para">
+              Além da parte nutricional, o app oferece um sistema completo de treinos com templates
+              pré-definidos de hipertrofia e força, rastreamento de peso com gráfico histórico, indicadores
+              de evolução por série (↑ melhorou / ↓ regrediu) e perfil personalizado com foto e nome.
+            </p>
+
+            <h3 class="project-details__content-title">Minhas Contribuições</h3>
+            <p class="project-details__desc-para">
+              Desenvolvi o projeto inteiro — desde a modelagem do banco de dados e a API REST em Node.js
+              com Express, até todas as telas do app em React Native com TypeScript. Implementei o motor
+              de cálculo nutricional, o sistema de autenticação com bcrypt, os templates de treino, o
+              rastreamento de peso com gráfico histórico e o gerenciamento de perfil com foto.
+            </p>
+
+            <div class="skills-container">
+              <div class="skills-section">
+                <h2>Hard Skills</h2>
+                <ul>
+                  <li>React Native · Expo</li>
+                  <li>TypeScript</li>
+                  <li>Node.js · Express</li>
+                  <li>PostgreSQL</li>
+                  <li>bcrypt · Autenticação</li>
+                </ul>
+              </div>
+              <div class="skills-section">
+                <h2>Soft Skills</h2>
+                <ul>
+                  <li>Autonomia</li>
+                  <li>Resolução de Problemas</li>
+                  <li>Gestão de Tempo</li>
+                  <li>Planejamento (Sprints)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Tecnologias Utilizadas</h3>
+            <div class="skills">
+              <div class="skills__skill">React Native</div>
+              <div class="skills__skill">Expo</div>
+              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Express</div>
+              <div class="skills__skill">PostgreSQL</div>
+              <div class="skills__skill">bcrypt</div>
+              <div class="skills__skill">React Navigation</div>
+              <div class="skills__skill">Axios</div>
+              <div class="skills__skill">Chart.js</div>
+            </div>
+          </div>
+
+          <div class="project-details__links">
+            <a href="https://github.com/ZduardoPereira/App-Receita"
+               class="btn btn--med btn--theme project-details__links-btn"
+               target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading-sm main-footer__heading-sm">Social</h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jos%C3%A9-eduardo-fernandes-pereira-b26517284/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="LinkedIn" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/ZduardoPereira">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="GitHub" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jose__eduardo12/">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/png/insta-ico.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading-sm" style="color:#fff;">José Eduardo</h4>
+          <p class="main-footer__short-desc">Desenvolvedor de Software · DSM FATEC SJC</p>
+        </div>
+      </div>
+      <div class="main-footer__lower">
+        © 2026 José Eduardo. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
